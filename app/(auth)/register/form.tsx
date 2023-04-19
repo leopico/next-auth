@@ -35,7 +35,7 @@ const RegisterForm = () => {
                 className="border w-full h-5 px-3 py-5 mt-2 hover: outline-none focus:outline-none focus:ring-indigo-600 focus:ring-1 rounded-lg" />
             <div className="flex flex-col">
                 <button type="submit" className="mt-4 bg-indigo-500 py-2 px-6 rounded-md text-white hover:bg-indigo-600">Register</button>
-                <p className="text-sm text-center mt-3">Have an account? <Link href="/api/auth/signin" className="font-bold text-blue-500">Sign in</Link></p>
+                <p className="text-sm text-center mt-3">Have an account? <Link href="/login" className="font-bold text-green-500">Sign in</Link></p>
             </div>
         </form>
     )

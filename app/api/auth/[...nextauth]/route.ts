@@ -6,6 +6,9 @@ import { compare } from 'bcrypt';
 const prisma = new PrismaClient();
 
 export const authOptions: NextAuthOptions = {
+    // pages: {
+    //     signIn: '/login'
+    // },
     session: {
         strategy: 'jwt'
     },
@@ -18,7 +21,7 @@ export const authOptions: NextAuthOptions = {
                     type: 'email',
                     placeholder: 'hello@example.com'
                 },
-                password: { label: 'Password', type: 'password'}
+                password: { label: 'Password', type: 'password', placeholder: '********'}
             },
             async authorize(credentials) {
                 if (!credentials?.email || !credentials?.password) {
